@@ -6,7 +6,7 @@ ENV TERM xterm
 
 RUN dnf -y update \
   && dnf -y install openssh-server passwd openssh-clients \
-  vim neovim cloc nmap-ncat htop tree iproute net-tools iputils pciutils  util-linux util-linux-user wget zsh aria2 \
+  vim neovim cloc nmap-ncat htop tree iproute net-tools iputils pciutils tcpdump psmisc procps-ng util-linux util-linux-user wget zsh aria2 \
   git cmake ninja-build python python-pip ruby lua nasm yasm \
   nodejs npm go rust gcc gcc-c++ clang llvm\
   libaio libzip lbzip2 \
