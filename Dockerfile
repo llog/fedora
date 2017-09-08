@@ -12,6 +12,7 @@ RUN dnf -y update \
   libaio libzip lbzip2 \
   java-1.8.0-openjdk-devel.x86_64 \
   && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" \
+  && mkdir ${HOME}/.config \
   && curl -sLf https://spacevim.org/install.sh | sh \
   && dnf clean all
 
